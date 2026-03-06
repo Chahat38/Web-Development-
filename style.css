@@ -1,0 +1,41 @@
+body{
+    background-color: yellow;
+    font-family: Arial;
+    
+}
+ h1{
+color: aliceblue;
+text-align: center;
+    width: 350px;
+    margin:auto;
+    font-size: 77px;
+     
+}
+div{
+    width: 350px;
+margin: auto;
+margin-top: 80px;
+padding: 20px;
+border: 2px solid black;
+border-radius: 0cap;
+background-color: white;
+}
+
+input{
+    width: 100%;
+    padding:6px;
+    margin: 6px 0;
+     
+}
+input[type="radio"]{
+width: auto;
+margin-left: 5px;
+}
+button{
+     width: 100%;
+padding: 8px;
+background-color: green;
+color: white;
+border: none;
+margin-top: 10px;
+}
