@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS All in One Demo</title>
+
+    <style>
+        /* 1. Colors (HEX, RGB, RGBA, HSL) */
+        body {
+            background-color: #e6f2ff; /* HEX */
+            background-image: url("https://via.placeholder.com/800");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: rgb(0, 102, 204); /* RGB */
+        }
+
+        p {
+            color: hsl(0, 70%, 40%); /* HSL */
+            background-color: rgba(255, 255, 0, 0.5); /* RGBA */
+            padding: 10px;
+        }
+
+        /* 2. Horizontal Menu */
+        ul {
+            list-style: none;
+            display: flex;
+            background: black;
+            padding: 10px;
+        }
+
+        ul li {
+            margin-right: 20px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: yellow;
+        }
+
+        /* 3. Box with border, margin, padding */
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 3px solid black;
+            margin: 20px;
+            padding: 10px;
+            float: left;
+            box-shadow: 3px 3px 10px gray;
+        }
+
+        /* Clear float */
+        .clear {
+            clear: both;
+        }
+
+        /* 4. Table with zebra rows */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: lightgreen;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>CSS Demo Page</h1>
+
+    <p>This paragraph shows HSL and RGBA colors.</p>
+
+    <!-- Menu -->
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Boxes -->
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <div class="clear"></div>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>Ahmed</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>Usman</td>
+            <td>SE</td>
+        </tr>
+    </table>
+
+</body>
+</html>

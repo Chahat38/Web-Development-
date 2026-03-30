@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Loop Program</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px gray;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Loop Tasks Output</h2>
+
+<script>
+
+//  simple input
+let N = parseInt(prompt("Enter a number:"));
+
+// 1. Pattern
+document.write("<div class='box'><b>Pattern:</b><br>");
+for(let i = 1; i <= N; i++){
+    for(let j = 1; j <= i; j++){
+        document.write(j + " ");
+    }
+    document.write("<br>");
+}
+document.write("</div>");
+
+
+// 2. Even & Odd
+let even = 0, odd = 0;
+
+for(let i = 1; i <= N; i++){
+    if(i % 2 == 0) even++;
+    else odd++;
+}
+
+document.write("<div class='box'>");
+document.write("<b>Even:</b> " + even + "<br>");
+document.write("<b>Odd:</b> " + odd);
+document.write("</div>");
+
+
+// 3. Sum (3 & 5)
+let sum = 0;
+
+for(let i = 1; i <= N; i++){
+    if(i % 15 == 0){   // simple trick (3 & 5 = 15)
+        sum += i;
+    }
+}
+
+document.write("<div class='box'>");
+document.write("<b>Sum (3 & 5):</b> " + sum);
+document.write("</div>");
+
+
+// 4. Reverse + highlight
+document.write("<div class='box'><b>Reverse:</b><br>");
+
+for(let i = N; i >= 1; i--){
+    if(i % 4 == 0){
+        document.write("<span class='highlight'>" + i + "</span><br>");
+    } else {
+        document.write(i + "<br>");
+    }
+}
+
+document.write("</div>");
+
+
+// 5. Prime  
+document.write("<div class='box'><b>Prime Numbers:</b><br>");
+
+for(let i = 2; i <= N; i++){
+    let count = 0;
+
+    for(let j = 2; j <= i; j++){
+        if(i % j == 0){
+            count++;
+        }
+    }
+
+    if(count == 2){   //  sirf 2 divisors = prime
+        document.write(i + " ");
+    }
+}
+
+document.write("</div>");
+
+</script>
+
+</body>
+</html>
