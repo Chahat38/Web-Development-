@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pakistan Info Page</title>
+</head>
+<body>
+
+    <h1>Pakistan Information</h1>
+
+    <!-- 🔹 LISTS -->
+    <h2>Provinces of Pakistan</h2>
+    <ul>
+        <li>Punjab</li>
+        <li>Sindh</li>
+        <li>Khyber Pakhtunkhwa</li>
+        <li>Balochistan</li>
+    </ul>
+
+    <h2>Famous Cities (Ordered List)</h2>
+    <ol>
+        <li>Lahore</li>
+        <li>Karachi</li>
+        <li>Islamabad</li>
+        <li>Peshawar</li>
+    </ol>
+
+    <!-- 🔹 TABLE -->
+    <h2>Major Cities Information</h2>
+    <table border="1">
+        <tr>
+            <th>City</th>
+            <th>Province</th>
+            <th>Famous For</th>
+        </tr>
+        <tr>
+            <td>Lahore</td>
+            <td>Punjab</td>
+            <td>Food & Culture</td>
+        </tr>
+        <tr>
+            <td>Karachi</td>
+            <td>Sindh</td>
+            <td>Business Hub</td>
+        </tr>
+        <tr>
+            <td>Islamabad</td>
+            <td>Capital Territory</td>
+            <td>Beautiful City</td>
+        </tr>
+        <tr>
+            <td>Peshawar</td>
+            <td>KPK</td>
+            <td>Historic Places</td>
+        </tr>
+    </table>
+
+    <!-- 🔹 FORM -->
+    <h2>Student Registration Form</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="province">Province:</label><br>
+        <select id="province" name="province">
+            <option>Punjab</option>
+            <option>Sindh</option>
+            <option>KPK</option>
+            <option>Balochistan</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
